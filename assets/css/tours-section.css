@@ -1,0 +1,182 @@
+.tours-section {
+  text-align: center;
+  position: relative;
+  padding-bottom: 180px;
+}
+
+.tours-section::after {
+  content: "";
+  opacity: 0.478;
+  width: 55%;
+  height: 55%;
+  left: -15%;
+  top: 45%;
+  position: absolute;
+  background: url(../images/shadow.svg);
+  background-repeat: no-repeat;
+  transform: scale(-1);
+}
+
+.tours-section h2 {
+  font-size: 63px;
+  text-transform: uppercase;
+  color: #e2a355;
+  font-weight: 800;
+  font-family: "Open Sans";
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+.tours-section > p {
+  font-size: 27px;
+  color: #7f7770;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-align: center;
+  margin-top: 45px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+  max-width: 700px;
+}
+.tours-section .container {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.tours-section .container article img {
+  width: 100%;
+  max-height: 301px;
+  object-fit: cover;
+}
+
+.tours-section .container article {
+  max-height: 530px;
+  padding-bottom: 25px;
+  width: 335px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(52, 52, 52, 0.702) 0%,
+    rgba(67, 64, 55, 0.471) 100%
+  );
+}
+.tours-section .container article .text-container p {
+  max-width: 90%;
+}
+.tours-section h5 {
+  font-size: 29px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Open Sans";
+  padding-bottom: 25px;
+}
+.tours-section .container article .text-container {
+  font-size: 23px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Open Sans";
+  margin-top: 55px;
+  margin-left: 12px;
+  height: 225px;
+  text-align: left;
+}
+.tours-section button {
+  margin: 55px auto;
+  font-size: 23px;
+  letter-spacing: 5px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+  font-family: "Open Sans";
+  background-image: linear-gradient(
+    0deg,
+    rgba(52, 52, 52, 0.702) 0%,
+    rgba(67, 64, 55, 0.471) 100%
+  );
+  padding: 27px 76px;
+  border-radius: 35px;
+  border: none;
+}
+/* --- mobile layout --- */
+
+@media only screen and (max-width: 1200px) {
+  .tours-section > p {
+    min-width: 80%;
+  }
+  .tours-section .container {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .tours-section h2 {
+    font-size: 52px;
+    margin-top: 60px;
+  }
+  .tours-section > p {
+    padding-bottom: 50px;
+  }
+  .tours-section::after {
+    width: 70%;
+    height: 70%;
+    top: 10%;
+    left: 0%;
+  }
+
+  .tours-section .container article .text-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 0;
+    height: 150px;
+  }
+  .tours-section .container article .text-container p {
+    margin: 0 auto;
+  }
+  .tours-section button {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .tours-section .container {
+    margin-top: 10px;
+  }
+  .tours-section button {
+    font-size: 18px;
+    padding: 12px 18px;
+    letter-spacing: 4px;
+  }
+  .tours-section {
+    padding-bottom: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .tours-section .container article {
+    width: 100vw;
+  }
+  .tours-section > p {
+    font-size: 17px;
+    padding-bottom: 20px;
+    max-width: 85%;
+  }
+  .tours-section h2 {
+    font-size: 33px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+  }
+  .tours-section .container {
+    gap: 0;
+  }
+  .tours-section button {
+    font-size: 12px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  .tours-section .container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,155 @@
+.main-section {
+  background-image: url(../images/image-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  height: 50px;
+  background-image: url(../images/wave-haikei.svg);
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: cover;
+  transform: scale(-1);
+  filter: drop-shadow(2.575px -4.286px 3.5px rgba(248, 246, 246, 0.75));
+}
+.main-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100vw;
+  height: 10%;
+  background-image: url(../images/wave-haikei.svg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(2.575px -4.286px 3.5px rgba(232, 230, 229, 0.75));
+}
+
+.main-section .container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(52, 52, 52, 0.702) 0%,
+    rgba(67, 64, 55, 0.471) 100%
+  );
+}
+
+.main-section .container .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 90px;
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+.main-section .container .text-container h1 {
+  width: 535px;
+  font-size: 82px;
+  text-transform: uppercase;
+  color: #deb37e;
+  font-weight: 800;
+  font-family: "Open Sans";
+  padding-bottom: 25px;
+  filter: drop-shadow(2.575px -4.286px 2.5px rgba(84, 82, 79, 0.22));
+}
+.main-section .container .text-container h4 {
+  width: 469px;
+  height: 65px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  color: #54524f;
+  font-weight: 700;
+  font-style: italic;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+}
+.main-section .container .text-container button {
+  font-size: 25px;
+  color: #776c64;
+  font-weight: 800;
+  font-family: "Open Sans";
+  text-align: center;
+  opacity: 0.902;
+  width: 218px;
+  height: 47px;
+  border-radius: 21px;
+  background-color: #ffffff;
+  border: none;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.main-section .container .text-container p {
+  width: 452px;
+  height: 130px;
+  font-size: 21px;
+  letter-spacing: 1px;
+  color: #54524f;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Open Sans";
+}
+
+/* --- mobile layout --- */
+
+@media only screen and (max-width: 992px) {
+  .main-section .container .text-container {
+    margin-left: 60px;
+  }
+  .main-section .container .text-container h1 {
+    font-size: 62px;
+  }
+  .main-section .text-container h1,
+  h4,
+  button,
+  p {
+    max-width: 45%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-section .container .text-container {
+    margin-left: 30px;
+  }
+  .main-section .container .text-container h1 {
+    font-size: 42px;
+    max-width: 60%;
+  }
+  .main-section .container .text-container h4 {
+    font-size: 17px;
+    max-width: 60%;
+  }
+  .main-section .container .text-container button {
+    font-size: 15px;
+    width: 140px;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  .main-section .container .text-container p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main-section .container .text-container h1 {
+    font-size: 32px;
+    max-width: 60%;
+  }
+  .main-section .container .text-container button {
+    font-size: 12px;
+    height: 25px;
+  }
+  .main-section .container .text-container h4 {
+    font-size: 13px;
+  }
+}

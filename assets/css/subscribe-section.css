@@ -1,0 +1,186 @@
+.subscribe-section {
+  background: #ddb37d;
+  position: relative;
+}
+.subscribe-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  height: 20%;
+  background-image: url(../images/wave-haikei.svg);
+  background-repeat: no-repeat;
+  position: 0%;
+  transform: scale(-1);
+  background-size: cover;
+}
+.subscribe-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100vw;
+  height: 22%;
+  background-image: url(../images/wave-haikei.svg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.subscribe-section .container {
+  margin: 0 auto;
+  padding-top: 180px;
+  width: 80%;
+  height: 330px;
+  padding-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.subscribe-section .container h2 {
+  font-size: 75px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Open Sans";
+  text-align: center;
+  text-transform: capitalize;
+  flex: 1;
+}
+
+.subscribe-section .container p {
+  height: 210px;
+  font-size: 30px;
+  color: #54524f;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-align: center;
+  max-width: 60%;
+  flex: 1;
+}
+.subscribe-section .container form {
+  width: 770px;
+  display: flex;
+}
+
+.subscribe-section .container form .email {
+  width: 700px;
+  height: 63px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  border: none;
+  outline: none;
+  opacity: 0.678;
+  font-size: 35px;
+  color: #54524f;
+  font-weight: 400;
+  font-family: "Open Sans";
+  padding-left: 20px;
+  position: relative;
+}
+
+.subscribe-section .container form button {
+  position: absolute;
+  left: 60%;
+  width: 222px;
+  height: 65px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 32px;
+  background-color: #54524f;
+  border: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+/* --- mobile layout --- */
+
+@media only screen and (max-width: 1200px) {
+  .subscribe-section .container {
+    padding-top: 100px;
+    padding-bottom: 180px;
+    justify-content: space-between;
+  }
+  .subscribe-section .container p {
+    margin-bottom: 35px;
+    max-width: 80%;
+  }
+  .subscribe-section .container form button {
+    left: 65%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .subscribe-section .container {
+    padding-top: 150px;
+  }
+  .subscribe-section .container p {
+    font-size: 25px;
+    margin-bottom: 30px;
+    max-width: 95%;
+  }
+  .subscribe-section .container h2 {
+    font-size: 60px;
+  }
+  .subscribe-section .container form {
+    max-width: 95%;
+    align-items: center;
+    flex-direction: column;
+    height: 35%;
+    gap: 5px;
+  }
+  .subscribe-section .container form button {
+    text-align: center;
+    font-size: 25px;
+    min-width: 90%;
+    position: unset;
+    padding: 0;
+  }
+
+  .subscribe-section .container form .email {
+    width: 90%;
+    font-size: 25px;
+    padding: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .subscribe-section .container form .email {
+    font-size: 22px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .subscribe-section .container form button {
+    font-size: 22px;
+    height: 50px;
+  }
+  .subscribe-section .container {
+    padding-top: 150px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .subscribe-section .container {
+    padding-bottom: 180px;
+    width: 100%;
+  }
+  .subscribe-section .container h2 {
+    font-size: 40px;
+  }
+  .subscribe-section .container p {
+    font-size: 20px;
+    width: 90%;
+  }
+  .subscribe-section .container form .email {
+    font-size: 20px;
+    height: 40px;
+  }
+  .subscribe-section .container form button {
+    font-size: 20px;
+    height: 40px;
+  }
+}
